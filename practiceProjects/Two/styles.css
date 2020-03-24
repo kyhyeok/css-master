@@ -1,0 +1,209 @@
+:root {
+  --padding: 20px;
+  --borderTop: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fafafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin: 80px 0 50px 0;
+  padding-left: var(--padding);
+}
+
+.navigation {
+  padding: 0 var(--padding);
+  margin-bottom: 50px;
+}
+
+.navigation .navigation__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.navigation .navigation__item {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  grid-gap: 10px;
+  text-align: center;
+  transition: box-shadow 0.1s linear;
+}
+
+.navigation__item .item__icon {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: box-shadow 0.2s linear;
+  cursor: pointer;
+}
+
+.navigation__list:hover .navigation__item {
+  opacity: 0.5;
+}
+
+.navigation__list .navigation__item:hover {
+  opacity: 1;
+}
+
+.navigation__list .navigation__item:hover .item__icon {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item__icon .icon__emoji {
+  font-size: 20px;
+}
+
+.navigation__item .item__text,
+.footer__item .item__text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.featured {
+  padding: var(--padding);
+  padding-top: 25px;
+  border-top: var(--borderTop);
+}
+
+.featured .featured__title {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.featured .featured__wrapper {
+  overflow: scroll;
+  display: grid;
+  grid-auto-columns: minmax(200px, 1fr);
+  grid-auto-flow: column;
+  grid-gap: 30px;
+  padding-bottom: 20px;
+}
+
+.featured__wrapper .featured__meal {
+  height: 150px;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  justify-content: space-between;
+}
+
+.featured__wrapper .featured__meal:first-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://i.pinimg.com/564x/29/41/b9/2941b914a6dff19e5c9f3811f6ebf2f9.jpg);
+}
+
+.featured__wrapper .featured__meal:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://i.pinimg.com/564x/66/9a/8b/669a8ba35d2b8162ec994f239e117e09.jpg);
+}
+
+.featured__wrapper .featured__meal:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://i.pinimg.com/564x/78/8f/91/788f91a403c591136fd808907fec1585.jpg);
+}
+
+.featured__wrapper .featured__meal:last-child {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url(https://i.pinimg.com/564x/ed/39/e7/ed39e7835d8405515756faf38b7e07be.jpg);
+}
+
+.featured__wrapper .featured-meal__title {
+}
+
+.featured__wrapper .featured-meal__button {
+  background-color: white;
+  padding: 5px;
+}
+
+.recipes {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: var(--borderTop);
+}
+
+.recipes__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: var(--padding);
+  width: 100%;
+}
+
+.recipes__list .recipe:nth-child(odd) {
+  background-color: white;
+}
+
+.recipes__list .recipe:nth-child(even) {
+  color: rgb(156, 156, 156);
+}
+
+.recipes__list .recipe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px var(--padding);
+}
+
+.recipe .recipe__name {
+  font-size: 15px;
+}
+
+.footer {
+  margin: 30px 0 20px 0;
+}
+
+.footer .footer__list {
+  list-style-type: none;
+  padding: 0 16px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation .navigation__item {
+  text-align: center;
+  transition: box-shadow 0.1s linear;
+}
+
+.footer__item .item__icon {
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  cursor: pointer;
+}
+
+.footer__item .item__text {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
