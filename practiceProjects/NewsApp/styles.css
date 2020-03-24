@@ -85,8 +85,6 @@ h6 {
 
 .grid-item .grid-item__subtitle {
   color: rgba(0, 0, 0, 0.6);
-
-  max-height: 30vh;
   overflow: hidden;
 }
 
