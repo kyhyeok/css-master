@@ -1,0 +1,111 @@
+:root {
+  --borderRadius: 15px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #fafafc;
+  color: rgba(0, 0, 0, 0.8);
+  padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.header .header__title {
+  margin-bottom: 5px;
+  font-size: 44px;
+}
+
+.header .header__subtitle {
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px 20px;
+}
+.grid .grid-item {
+  height: 60vh;
+}
+.grid .grid__hero-item {
+  grid-column: span 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(https://i.pinimg.com/564x/42/a5/6a/42a56a801ed10b770d189282169a649f.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 20px 10px;
+  border-radius: var(--borderRadius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.grid__hero-item .hero-item__title {
+  align-self: flex-end;
+  font-size: 22px;
+}
+
+.grid__hero-item .hero-item__subtitle {
+  width: 68%;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.grid-item .grid-item__title {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.grid-item .grid-item__photo {
+  max-width: 100%;
+  border-radius: var(--borderRadius);
+  margin-bottom: 10px;
+}
+
+.grid-item .grid-item__subtitle {
+  color: rgba(0, 0, 0, 0.6);
+
+  max-height: 30vh;
+  overflow: hidden;
+}
+
+.footer {
+  margin: 40px 0 20px 0;
+}
+
+.footer .footer-img__reporter {
+  background-image: url(https://i.pinimg.com/564x/60/3c/eb/603ceb6857530646b289f0a882c8bd59.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 20vh;
+  display: flex;
+}
+
+.footer .footer-img__reporter h3 {
+  font-size: 22px;
+  color: red;
+  align-self: flex-end;
+}
