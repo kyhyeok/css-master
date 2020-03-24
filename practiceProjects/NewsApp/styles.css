@@ -46,7 +46,7 @@ h6 {
   grid-gap: 30px 20px;
 }
 .grid .grid-item {
-  height: 60vh;
+  height: 40vh;
 }
 .grid .grid__hero-item {
   grid-column: span 2;
