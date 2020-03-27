@@ -51,7 +51,7 @@ body {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 20px;
-  font0weight: bold;
+  font-weight: bold;
 }
 
 .header .header_btns {
