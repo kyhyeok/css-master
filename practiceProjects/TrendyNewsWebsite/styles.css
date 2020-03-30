@@ -37,7 +37,7 @@ body {
 
 .image-right {
   flex: 1;
-  background-image: url(https://i.pinimg.com/564x/90/e2/ab/90e2ab970de37545fd26648741bf1c48.jpg);
+  background-image: url(https://i.pinimg.com/564x/82/50/8e/82508ef9a8d3d03e30d6479a9702bf98.jpg);
 }
 
 .grid__wrapper {
@@ -101,6 +101,7 @@ body {
   flex-direction: column;
 }
 
+.image-right,
 .grid .item:nth-child(3) .item__column:first-child,
 .grid .item:nth-child(4) .item__column:last-child,
 .grid .item:nth-child(5) .item__column:last-child {
