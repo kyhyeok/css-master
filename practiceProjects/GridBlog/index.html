@@ -7,5 +7,75 @@
     <title>GridBlog</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__title">책책책 ____<span>책을 읽읍니다</span></h1>
+      <h2 class="header__subtitle">책 <span>읽는기술</span></h2>
+    </header>
+
+    <main class="content">
+      <aside class="content__sidebar">
+        <div class="box">
+          <h3 class="box__title">About</h3>
+          <p class="box__text">
+            김용만, 유재석, 그리고 당시 탐라대 교수였던 김재윤 제17~19대 국회의원(더불어민주당 소속)이 진행한 이 프로그램은 온 국민을 독서 열풍으로 몰아 넣었다. 이 코너에서는 한달에 한 두권 지정도서를 선정했는데, 선정되는 책마다 베스트셀러가 되고, 판매량 1위가 되는 등 큰 인기를 끌었다. 후반부에는 독서환경이 열악한 지역에 어린이 도서관을 세우는 '기적의 도서관'(ex. 전라남도 순천시)사업도 추진했다.
+<br /><br />
+그 중에 시도 자체는 좋았지만 지하철 책 읽기 운동을 하면서 벌어진 일련의 사태로 폭풍 까인 뒤 다른 의미로 레전드가 된 특집이 있다. 2002년 4월 20일자 방송중, MC들은 '일본인들은 지하철에서 유용한 책을 읽는다더라'라며 지하철에서 책 읽기를 강조했는데, 이후 실제로 일본에서 살아본 사람들이 '일본 사람들 지하철에서 만화책 보거나, 졸던데?' 라는 반응을 보이며 인터넷이 시끌벅적해졌고, 거기에 더해 MC들이 지하철에서 만화책을 보던 남학생을 희화화하는 식으로 진행한 인터뷰가 문제가 되었다.
+          </p>
+        </div>
+        <div class="box">
+          <h3 class="box__title">Categories</h3>
+          <ul class="box__categories">
+            <li class="box__category box__category--selected">모두보기</li>
+            <li class="box__category">소설</li>
+            <li class="box__category">역사/문학</li>
+            <li class="box__category">컴퓨터/IT</li>
+            <li class="box__category">역사/문화</li>
+            <li class="box__category">종교</li>
+            <li class="box__category">과학</li>
+          </ul>
+        </div>
+      </aside>
+      <section class="content__projects">
+        <div class="box">
+          <h3 class="box__title">Projects</h3>
+          <div class="grid">
+            <article class="project">
+              <img src="https://i.pinimg.com/564x/5c/4a/09/5c4a0964a307692487a500a45a8604b4.jpg" alt="프로이드 꿈의 해석" class="project__image" />
+              <h4 class="project__title">꿈의 해석!</h4>
+              <h5 class="project__author">프로이드</h5>
+              <small class="project__date">1899년 11월</small>
+              <span class="project__location">라이프치히, 빈</span>
+              <p class="project__intro">프로이트의 정신분석학을 대변하는 가장 대표적인 책이다. 꿈은 우리들이 정상적인 일상생활에서 충족시키지 못한 욕구를 충족시키기 위해 일어나는 것이다</p>
+              <span class="project__plus">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+			  </span>
+            </article>
+			<article class="project">
+              <img src="https://i.pinimg.com/564x/a2/34/3f/a2343fff21086b8ef28d0733f4568ddb.jpg" alt="코드 컴플리트2" class="project__image" />
+              <h4 class="project__title">code complete2</h4>
+              <h5 class="project__author">스티브 맥코넬</h5>
+              <small class="project__date">2017년 7월</small>
+              <span class="project__location">미국</span>
+              <p class="project__intro">더 나은 소프트웨어 구현을 위한 실무 지침서. 소프트웨어 구현을 둘러싼 다양한 비유부터 기초적인 프로그래밍, 시스템 구축, 소프트웨어 장인정신에 이르기까지 소프트웨어 업계에 종사하는 분이라면 누구나 읽어야 할 필독서입니다</p>
+              <span class="project__plus">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+			  </span>
+            </article>
+			<article class="project">
+              <img src="https://i.pinimg.com/564x/3e/ff/3f/3eff3f7bad1be8aaa1d7a358d175f618.jpg" alt="총균쇠" class="project__image" />
+              <h4 class="project__title">총균쇠</h4>
+              <h5 class="project__author">재레드 다이아몬드</h5>
+              <small class="project__date">1997년 12월</small>
+              <span class="project__location">미국</span>
+              <p class="project__intro">유라시아 문명이 다른 문명을 정복할 수 있었던 이유는 유라시아 인종의 지적, 도덕적, 유전적 우월성 때문이 아니라, 지리적 차이에 있다는 결론을 저자 특유의 간결한 문체와 폭넓은 자료 분석으로 이끌어내고 있다.</p>
+              <span class="project__plus">
+			  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 13h-5v5h-2v-5h-5v-2h5v-5h2v5h5v2z"/></svg>
+			  </span>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
