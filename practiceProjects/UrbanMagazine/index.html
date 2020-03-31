@@ -7,5 +7,63 @@
     <title>UrbanMagazine</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav class="nav">
+      <span class="nav__icon">|||</span>
+      <ul class="nav__list">
+        <li class="nav__list-item">About</li>
+        <span class="nav__divider">X</span>
+        <li class="nav__list-item">
+          Categories
+        </li>
+        <span class="nav__divider">X</span>
+        <li class="nav__list-item">Features<span></span></li>
+      </ul>
+      <span class="nav__icon">●</span>
+    </nav>
+
+    <header class="header">
+      <h1 class="header__title">인기 글</h1>
+      <span class="header__icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.219-4.247-9.467-9.468-9.467s-9.468 4.248-9.468 9.468c0 5.221 4.247 9.469 9.468 9.469 1.768 0 3.421-.487 4.839-1.333l6.396 6.396 3.119-3.12zm-20.294-11.412c0-3.273 2.665-5.938 5.939-5.938 3.275 0 5.94 2.664 5.94 5.938 0 3.275-2.665 5.939-5.94 5.939-3.274 0-5.939-2.664-5.939-5.939z"
+          />
+        </svg>
+      </span>
+    </header>
+
+    <main class="slider">
+      <span class="slider__arrow">←</span>
+      <section class="slider__content">
+        <div class="slider__photo"></div>
+        <div class="info">
+          <h5 class="info__pre-title">오페라의 유령</h5>
+          <h2 class="info__title">7년만에 오페라의 유령 내한공연!</h2>
+          <p class="info__intro">
+            가면 뒤에 흉측한 외모를 가리고 파리 오페라하우스의 지하에 숨어 사는
+            팬텀.천상의 목소리를 가진 그는 아름다운 코러스단원 크리스틴을 마음에
+            품고, 오페라하우스의 매니저들을 협박해 그녀를 최고의 프리마돈나로
+            만든다.팬텀의 접근에 겁에 질린 크리스틴은 다정한 라울 백작의 품
+            안에서 위로를 받지만 이를 눈치챈 팬텀은 급기야 크리스틴을 납치하기에
+            이르는데…
+          </p>
+          <small class="info__date">2020년 3월 31일</small>
+        </div>
+      </section>
+      <span class="slider_arrow">→</span>
+    </main>
+
+    <footer class="pagination">
+      <span class="pagination__number pagination__number--current">1</span>
+      <span class="pagination__number">2</span>
+      <span class="pagination__number">3</span>
+      <span class="pagination__number">4</span>
+    </footer>
+  </body>
 </html>
