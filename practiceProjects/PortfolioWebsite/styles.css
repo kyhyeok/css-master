@@ -1,0 +1,147 @@
+:root {
+	--greyColor: rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: white;
+  overflow: hidden;
+}
+
+.header {
+	padding: 30px 40px 0 40px;
+}
+
+.header .header__list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin : 0;
+	padding: 0;
+}
+
+.header__list .header__title {
+	font-size: 32px;
+}
+
+.header .header__list li:last-child svg {
+	fill: var(--greyColor);
+}
+
+.header .header__list li:nth-child(3) span:first-child, 
+.header .header__list li:last-child svg:first-child {
+	color: var(--greyColor);
+	margin-right: 30px;
+}
+
+.header .header__list li:nth-child(2) span{
+
+}
+
+.grid {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	padding-left: 50px;
+	height: 92%;
+}
+
+.grid .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+.content .content__title {
+	font-size: 80px;
+}
+
+.content .content__text {
+	color: var(--greyColor);
+	font-size: 14px;
+	padding-right: 40px;
+}
+
+.content .view-more,
+.footer__box {
+	display: flex;
+	align-items: center;
+	margin: 100px 0 50px 0;
+}
+
+.view-more .view-more__icon,
+.footer__box  .footer__arrow {
+	background-color: var(--greyColor);
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.view-more__icon svg {
+	fill: var(--greyColor);
+}
+
+.view-more .view-more__text {
+	color: var(--greyColor);
+}
+
+.footer__box {
+	position: absolute;
+    bottom: 0;
+}
+
+.items {
+	display: flex;
+	align-items: center;
+}
+
+.items .item__wrapper {
+	height: 100%;
+}
+
+.item img {
+	width: 100%;
+	margin-bottom: 50px;
+	height: 350px;
+}
+
+.item .item__pre-title {
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.item .item__title {
+	margin-bottom: 50px;
+	font-weight: 300;
+	font-size: 28px;
+}
+
+.item .item__number {
+	font-weight: bold;
+}
